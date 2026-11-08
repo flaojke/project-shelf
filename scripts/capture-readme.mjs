@@ -10,6 +10,7 @@ try {
   browser = await chromium.launch({ channel: 'msedge', headless: true });
   const context = await browser.newContext({ viewport: { width: 1440, height: 1080 }, deviceScaleFactor: 1 });
   const page = await context.newPage();
+  page.setDefaultTimeout(15_000);
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
   await fs.mkdir('docs/assets', { recursive: true });
@@ -28,8 +29,18 @@ try {
   await page.getByRole('dialog', { name: 'Настройка веб-проекта' }).waitFor();
   await page.getByText('Пока требуется настройка', { exact: true }).waitFor();
   await page.screenshot({ path: 'docs/assets/shelf-setup.png', fullPage: true, animations: 'disabled', caret: 'hide' });
+  await page.getByRole('button', { name: 'Закрыть настройки проекта', exact: true }).click();
+  const android = page.locator('.project-card').filter({ has: page.getByRole('heading', { name: 'Android-приложение', exact: true }) });
+  await android.getByRole('button', { name: 'Настроить', exact: true }).click();
+  await page.getByRole('dialog').waitFor();
+  await page.getByText('Пока требуется настройка', { exact: true }).waitFor();
+  await page.screenshot({ path: 'docs/assets/shelf-android.png', fullPage: true, animations: 'disabled', caret: 'hide' });
+  await page.getByRole('button', { name: 'Закрыть настройки проекта', exact: true }).click();
+  await page.getByRole('button', { name: 'Настройки', exact: true }).click();
+  await page.getByRole('dialog', { name: 'Немного настроек' }).waitFor();
+  await page.screenshot({ path: 'docs/assets/shelf-settings.png', fullPage: true, animations: 'disabled', caret: 'hide' });
   if (errors.length) throw new Error(errors.join('\n'));
-  console.log('Captured three real browser-demo screenshots; no native project actions performed.');
+  console.log('Captured five real browser-demo screenshots; no native project actions performed.');
 } finally {
   if (browser) await browser.close();
   await server.close();

@@ -1,17 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
-<title id="title">Project Shelf</title><desc id="desc">Your local projects. One thoughtful workspace. Windows desktop launcher.</desc>
-<rect width="1280" height="360" rx="24" fill="#f5f2eb"/>
-<path d="M920 0h360v360H920z" fill="#e9eee5"/>
-<circle cx="1185" cy="72" r="174" fill="none" stroke="#cdd8c7" stroke-width="1.5"/>
-<circle cx="1185" cy="72" r="130" fill="none" stroke="#cdd8c7" stroke-width="1.5"/>
-<g font-family="Segoe UI,Arial,sans-serif">
-<text x="64" y="68" fill="#52705b" font-size="14" letter-spacing="4">LOCAL FIRST · WINDOWS DESKTOP</text>
-<text x="60" y="157" fill="#263c32" font-size="68" font-weight="700" letter-spacing="-3">Project Shelf<tspan fill="#ce7048">.</tspan></text>
-<text x="64" y="210" fill="#56645a" font-size="25">Ваши проекты. Одна полка. Всё под рукой.</text>
-<rect x="64" y="258" width="103" height="34" rx="17" fill="#e4e9df"/><text x="87" y="280" font-size="14" fill="#365342">Vite / Web</text>
-<rect x="177" y="258" width="112" height="34" rx="17" fill="#e4e9df"/><text x="195" y="280" font-size="14" fill="#365342">PowerShell</text>
-<rect x="299" y="258" width="96" height="34" rx="17" fill="#e4e9df"/><text x="324" y="280" font-size="14" fill="#365342">Docker</text>
-<rect x="405" y="258" width="100" height="34" rx="17" fill="#e4e9df"/><text x="427" y="280" font-size="14" fill="#365342">Android</text>
-</g>
-<g transform="translate(970 100)"><rect width="94" height="58" rx="9" fill="#667e64"/><rect x="108" width="94" height="58" rx="9" fill="#bf764f"/><rect y="74" width="94" height="58" rx="9" fill="#5d7c98"/><rect x="108" y="74" width="94" height="58" rx="9" fill="#c6a360"/><path d="M-12 148h226" stroke="#2d493a" stroke-width="8" stroke-linecap="round"/></g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-label="Все ваши codex и claude проекты на одной полке"><rect width="1280" height="440" rx="24" fill="#f5f2eb"/><g font-family="Segoe UI,Arial,sans-serif">
+<path d="M875 0h405v440H875z" fill="#e7ecdf"/><circle cx="1135" cy="90" r="190" fill="none" stroke="#cbd7c1"/><circle cx="1135" cy="90" r="145" fill="none" stroke="#cbd7c1"/>
+<g transform="translate(62 45) scale(0.65)"><rect width="28" height="39" rx="5" fill="#667e64"/><rect x="35" y="8" width="28" height="31" rx="5" fill="#c47a55"/><rect x="70" y="4" width="28" height="35" rx="5" fill="#66859b"/><path d="M-5 48h108" stroke="#263c32" stroke-width="6" stroke-linecap="round"/></g><text x="150" y="75" font-size="15" letter-spacing="3" fill="#52705b">ЛОКАЛЬНО. СПОКОЙНО. ПОД РУКОЙ.</text>
+<text x="58" y="170" font-size="76" font-weight="700" letter-spacing="-3" fill="#263c32">Project Shelf<tspan fill="#c47a55">.</tspan></text>
+<text x="64" y="230" font-size="31" fill="#263c32">Все ваши codex и claude проекты</text><text x="64" y="273" font-size="31" fill="#263c32">на одной полке</text>
+<text x="64" y="332" font-size="18" fill="#667267">От хорошей идеи — к подготовленному запуску.</text>
+<text x="64" y="391" font-size="14" letter-spacing="2" fill="#52705b">WINDOWS  /  VITE  /  POWERSHELL  /  DOCKER  /  ANDROID</text>
+<g transform="translate(927 120) rotate(-7 125 90)"><rect x="8" y="15" width="244" height="172" rx="19" fill="#d4dccb"/><rect width="244" height="172" rx="19" fill="#fffdf7" stroke="#cbd7c1"/><circle cx="22" cy="22" r="4" fill="#c47a55"/><circle cx="36" cy="22" r="4" fill="#d5bd80"/><circle cx="50" cy="22" r="4" fill="#667e64"/><g transform="translate(48 62) scale(1.45)"><rect width="28" height="39" rx="5" fill="#667e64"/><rect x="35" y="8" width="28" height="31" rx="5" fill="#c47a55"/><rect x="70" y="4" width="28" height="35" rx="5" fill="#66859b"/><path d="M-5 48h108" stroke="#263c32" stroke-width="6" stroke-linecap="round"/></g></g>
+<text x="971" y="348" font-size="15" letter-spacing="3" fill="#52705b">МЕСТО ДЛЯ ВАШИХ ИДЕЙ</text></g></svg>
