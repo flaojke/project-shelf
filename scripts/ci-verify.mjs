@@ -27,6 +27,7 @@ export function allowedSourcePath(value, legalPaths = new Set()) {
   const name = safeRelative(value);
   return sourceRootFiles.has(name)
     || legalPaths.has(name)
+    || ['docs/assets/hero.svg', 'docs/assets/shelf-home.png', 'docs/assets/shelf-detail.png', 'docs/assets/shelf-setup.png', 'scripts/capture-readme.mjs'].includes(name)
     || /^docs\/[A-Z][A-Z0-9_-]*\.md$/.test(name)
     || /^scripts\/(?:Build-ProjectShelf\.ps1|Create-Shortcut\.ps1|ci-verify\.mjs|ci-verify\.test\.mjs)$/.test(name)
     || /^src\/(?:[A-Za-z0-9_-]+\/)*[A-Za-z0-9_-]+\.(?:ts|tsx|css)$/.test(name)

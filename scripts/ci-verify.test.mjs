@@ -9,8 +9,8 @@ test('review paths reject parent traversal, drive and network roots', () => {
 });
 
 test('publication whitelist accepts product source and reviewed legal texts, not application data', () => {
-  for (const name of ['.gitattributes', 'src/App.tsx', 'src/assets.d.ts', 'src/assets/covers/web-cover.png', 'profiles/defaults.json', '.github/workflows/windows-build.yml', 'docs/CI_WINDOWS.md']) assert.equal(allowedSourcePath(name), true);
-  for (const name of ['profiles/local.json', 'data/application.json', 'verification/report.json', 'runtime/node.exe', 'docs/private-notes.md', 'src/assets/covers/unreviewed.png']) assert.equal(allowedSourcePath(name), false);
+  for (const name of ['.gitattributes', 'src/App.tsx', 'src/assets.d.ts', 'src/assets/covers/web-cover.png', 'profiles/defaults.json', '.github/workflows/windows-build.yml', 'docs/CI_WINDOWS.md', 'docs/assets/hero.svg', 'docs/assets/shelf-home.png', 'docs/assets/shelf-detail.png', 'docs/assets/shelf-setup.png', 'scripts/capture-readme.mjs']) assert.equal(allowedSourcePath(name), true);
+  for (const name of ['profiles/local.json', 'data/application.json', 'verification/report.json', 'runtime/node.exe', 'docs/private-notes.md', 'docs/assets/unreviewed.png', 'docs/assets/private.json', 'src/assets/covers/unreviewed.png']) assert.equal(allowedSourcePath(name), false);
   assert.equal(allowedSourcePath('licenses/example/LICENSE'), false);
   assert.equal(allowedSourcePath('licenses/example/LICENSE', new Set(['licenses/example/LICENSE'])), true);
 });
