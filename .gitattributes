@@ -1,0 +1,4 @@
+# Keep reviewed source and third-party legal text bytes unchanged in Git.
+* -text
+*.png binary
+*.ico binary

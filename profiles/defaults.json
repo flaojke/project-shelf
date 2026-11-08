@@ -1,0 +1,6 @@
+[
+  {"id":"web","name":"Веб-проект","subtitle":"Настройте каталог и признак готовности","kind":"process","path":"","url":"http://127.0.0.1:5180/","accent":"#7591B1","cover":"blueprint","favorite":true,"tags":["Vite","Веб"],"config":{"nodePath":"","port":5180,"readyMarker":""}},
+  {"id":"powershell","name":"PowerShell-сайт","subtitle":"Настройте совместимый локальный сайт","kind":"powershell","path":"","url":"http://127.0.0.1:8877/","accent":"#A1A684","cover":"powershell","favorite":false,"tags":["PowerShell","Веб"],"config":{"port":8877,"service":"","allowStop":false}},
+  {"id":"docker","name":"Docker-сервис","subtitle":"Настройте Compose и проверку готовности","kind":"docker","path":"","url":"http://127.0.0.1:8080/","accent":"#5D9D97","cover":"docker","favorite":false,"tags":["Docker","Веб"],"config":{"dockerPath":"","composeFile":"","service":"","healthMessage":""}},
+  {"id":"android","name":"Android-приложение","subtitle":"Настройте SDK, приложение и устройство","kind":"android","path":"","accent":"#DD9F55","cover":"calendar","favorite":false,"tags":["Android","Устройство"],"config":{"sdkRoot":"","avdHome":"","androidUserHome":"","serial":"","avd":"","packageName":"","activity":"","apkPath":""}}
+]

@@ -1,0 +1,28 @@
+[package]
+name = "project-shelf"
+version = "0.2.0"
+description = "Local project launcher with explicit process ownership"
+license = "Apache-2.0"
+edition = "2021"
+rust-version = "1.90"
+
+[lib]
+name = "project_shelf_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-single-instance = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync", "time", "net"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+url = "2"
+chrono = { version = "0.4", default-features = false, features = ["clock", "serde"] }
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.59", features = ["Win32_Foundation", "Win32_Security", "Win32_System_JobObjects", "Win32_System_Threading", "Win32_System_Diagnostics_ToolHelp", "Win32_Storage_FileSystem", "Win32_NetworkManagement_IpHelper", "Win32_Networking_WinSock"] }
+

@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main-window",
+  "description": "Only the local main window may use the application IPC",
+  "windows": ["main"],
+  "permissions": ["core:default"]
+}
